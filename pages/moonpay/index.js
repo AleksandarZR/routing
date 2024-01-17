@@ -3,10 +3,10 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react'
 import Button from "../../components/Button";
 
-const MoonPayProvider = dynamic(
+/* const MoonPayProvider = dynamic(
     () => import('@moonpay/moonpay-react').then((mod) => mod.MoonPayProvider),
     { ssr: false },
-);
+); */
 
 const MoonPayBuyWidget = dynamic(
     () => import('@moonpay/moonpay-react').then((mod) => mod.MoonPayBuyWidget),
@@ -28,7 +28,7 @@ function Moonpay() {
 
             {/* embedded overlay newTab newWindow */}
             <MoonPayBuyWidget
-                variant="embedded"
+                variant="overlay"
                 baseCurrencyCode="usd"
                 baseCurrencyAmount="100"
                 defaultCurrencyCode="eth"
