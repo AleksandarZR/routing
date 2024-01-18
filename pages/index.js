@@ -17,6 +17,7 @@ function Home() {
             <h2><Link href='/product'>Products</Link></h2>
             <h2><Link href='/item'>Items</Link></h2>
             <h2><Link href='/moonpay'>Moonpay</Link></h2>
+            <h2><Link href='/privy'>Privy</Link></h2>
 
             <button onClick = {handleClick}> 
                 Place Order
